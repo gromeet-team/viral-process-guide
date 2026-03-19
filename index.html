@@ -327,9 +327,60 @@
             <li><strong>벤 담당</strong>: 텔레그램에서 실명계정 판매자 컨택 → 실명 아이디 구매</li>
             <li>구매한 계정은 실명계정 정리 시트에 즉시 기록</li>
           </ul>
-          <div class="warn-box">
-            ⚠️ <strong>필수 환경: 테더링 사용</strong><br>
-            프록시 절대 금지 — 실명계정 영구정지 방지. Wi-Fi X, 데이터 테더링만.
+
+          <div style="margin-top:16px;background:#12121e;border:1px solid #3d3d5c;border-radius:10px;overflow:hidden;">
+            <div style="padding:10px 14px;background:#1e1840;border-bottom:1px solid #3d3d5c;font-size:12px;font-weight:700;color:#a78bfa;letter-spacing:0.06em;text-transform:uppercase;">
+              🔑 실명 계정 운영 가이드 (2026-03-19)
+            </div>
+            <div style="padding:14px 16px;">
+
+              <div style="font-size:12px;font-weight:700;color:#6b7280;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px;">핵심 규칙</div>
+              <ul class="detail-list" style="margin-top:0;">
+                <li>국내 IP만 사용 — <strong>계정 1개 = 고정 IP 1개</strong> (공유 절대 금지)</li>
+                <li>최초 로그인 시 보안 알림 <strong>1회 OFF</strong> (이후 재설정 불필요)</li>
+                <li>비밀번호 <strong>절대 변경 금지</strong></li>
+                <li>항상 <strong>동일 PC에서만 접속</strong> — 자동화 PC = 수동 접속 PC 일치</li>
+              </ul>
+
+              <div style="margin-top:14px;font-size:12px;font-weight:700;color:#6b7280;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px;">중요 사실 3가지</div>
+
+              <div style="display:flex;flex-direction:column;gap:8px;">
+                <div class="tip-box" style="margin-top:0;">
+                  <strong>① 보안 알림은 최초 1회만 OFF하면 된다</strong><br>
+                  설정값이 계정 서버에 저장되므로 시크릿 모드로 매번 로그인해도 유지됨.<br>
+                  <span style="color:#9ca3af;font-size:12px;margin-top:4px;display:block;">경로: 네이버 로그인 → 내 정보 → 보안설정 → 로그인 알림 → OFF</span>
+                </div>
+                <div class="tip-box" style="margin-top:0;">
+                  <strong>② 고정 IP 구매 필수 — 랜덤 프록시(유동 IP) 사용 불가</strong><br>
+                  계정당 고정 IP 1개를 배정해야 함. 유동 프록시는 매번 IP가 바뀌어 보안 알림 발생 + 어뷰징 감지 위험.
+                </div>
+                <div class="tip-box" style="margin-top:0;">
+                  <strong>③ 자동화 PC = 수동 접속 PC (반드시 동일)</strong><br>
+                  고정 IP를 써도 다른 PC에서 접속하면 기기 fingerprint가 달라 "새 환경 로그인" 알림 발생.
+                </div>
+              </div>
+
+              <div style="margin-top:14px;font-size:12px;font-weight:700;color:#6b7280;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px;">운영 프로세스</div>
+              <div style="background:#0f0f1a;border:1px solid #2d2d44;border-radius:8px;padding:12px 14px;font-family:monospace;font-size:12.5px;color:#94a3b8;line-height:1.8;">
+                <span style="color:#6b7280;"># 수동 접속 시</span><br>
+                1. FoxyProxy 등 브라우저 프록시 확장 → 해당 계정 IP 선택<br>
+                2. 시크릿 모드 로그인<br>
+                3. 작업 완료 후 로그아웃<br>
+                <br>
+                <span style="color:#6b7280;"># 자동화 프로그램</span><br>
+                - 각 계정별 프록시 IP 설정값 고정 입력<br>
+                - 계정 전환 시 IP도 자동 전환되도록 세팅
+              </div>
+
+              <div style="margin-top:14px;">
+                <div class="warn-box" style="margin-top:0;">
+                  ❌ <strong>금지 사항</strong><br>
+                  다른 PC에서 같은 계정 접속 &nbsp;·&nbsp; 유동 IP(랜덤 프록시) 사용 &nbsp;·&nbsp;
+                  같은 IP로 여러 계정 동시 사용 &nbsp;·&nbsp; 비밀번호 변경 &nbsp;·&nbsp; VPN/해외 IP 사용
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
